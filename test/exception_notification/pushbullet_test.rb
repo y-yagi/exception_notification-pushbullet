@@ -22,7 +22,7 @@ class ExceptionNotification::PushbulletTest < Minitest::Test
     end
   end
 
-  def test_default_title
+  def test_set_title_option
     notifier = ExceptionNotifier::PushbulletNotifier.new(users: {}, title: 'title')
     assert_equal 'title', notifier.title
   end
