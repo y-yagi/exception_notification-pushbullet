@@ -56,6 +56,13 @@ Check [Pushbullet API](https://docs.pushbullet.com/#pushbullet-api) for details.
 
 ID of devices to send notifications.  Default is send to all devices registered in user.
 
+
+#### title
+
+*String, default: "New exception occured in _appname_(_environment_)."*
+
+Notification title.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/y-yagi/exception_notification-pushbullet. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
