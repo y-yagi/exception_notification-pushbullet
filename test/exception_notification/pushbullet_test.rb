@@ -9,7 +9,7 @@ class ExceptionNotification::PushbulletTest < Minitest::Test
 
   def test_default_title
     notifier = ExceptionNotifier::PushbulletNotifier.new(users: {})
-    assert_equal 'New exception occured.', notifier.title
+    assert_equal 'New exception occurred.', notifier.title
   end
 
   def test_title_including_app_name_and_environemt_if_can_use
@@ -17,7 +17,7 @@ class ExceptionNotification::PushbulletTest < Minitest::Test
 
     notifier.stub :app, 'rails_app' do
       notifier.stub :environment, 'production' do
-        assert_equal 'New exception occured in rails_app(production).', notifier.title
+        assert_equal 'New exception occurred in rails_app(production).', notifier.title
       end
     end
   end

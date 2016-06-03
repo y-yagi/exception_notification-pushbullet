@@ -34,9 +34,9 @@ module ExceptionNotifier
       if @title
         @title
       elsif app && environment
-        "New exception occured in #{app}(#{environment})."
+        "New exception occurred in #{app}(#{environment})."
       else
-        'New exception occured.'
+        'New exception occurred.'
       end
     end
 
